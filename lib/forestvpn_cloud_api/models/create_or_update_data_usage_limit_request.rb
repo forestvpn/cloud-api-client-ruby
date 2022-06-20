@@ -38,7 +38,7 @@ module ForestVPNCloudAPI
     def self.openapi_types
       {
         :'duration' => :'String',
-        :'value' => :'Float'
+        :'value' => :'Integer'
       }
     end
 

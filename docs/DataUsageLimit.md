@@ -6,7 +6,7 @@
 | ---- | ---- | ----------- | ----- |
 | **id** | **String** |  |  |
 | **duration** | **String** | Duration in ISO 8601 format. Example P7D - per week |  |
-| **value** | **Float** | Value in bytes. For convert to MegaBytes use formula {value} / (1024 * 1024) |  |
+| **value** | **Integer** | Value in bytes. For convert to MegaBytes use formula {value} / (1024 * 1024) |  |
 | **scope** | **String** |  |  |
 
 ## Example

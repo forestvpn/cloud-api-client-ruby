@@ -474,8 +474,8 @@ module ForestVPNCloudAPI
     # @option opts [String] :aggregate_by 
     # @option opts [Date] :date_after 
     # @option opts [Date] :date_before 
-    # @option opts [Float] :per_page 
-    # @option opts [Float] :page 
+    # @option opts [Integer] :per_page 
+    # @option opts [Integer] :page 
     # @return [Array<ProfileStats>]
     def list_profile_stats(profile_id, opts = {})
       data, _status_code, _headers = list_profile_stats_with_http_info(profile_id, opts)
@@ -488,8 +488,8 @@ module ForestVPNCloudAPI
     # @option opts [String] :aggregate_by 
     # @option opts [Date] :date_after 
     # @option opts [Date] :date_before 
-    # @option opts [Float] :per_page 
-    # @option opts [Float] :page 
+    # @option opts [Integer] :per_page 
+    # @option opts [Integer] :page 
     # @return [Array<(Array<ProfileStats>, Integer, Hash)>] Array<ProfileStats> data, response status code and response headers
     def list_profile_stats_with_http_info(profile_id, opts = {})
       if @api_client.config.debugging
@@ -551,8 +551,8 @@ module ForestVPNCloudAPI
     # Profile list
     # @param [Hash] opts the optional parameters
     # @option opts [String] :external_key 
-    # @option opts [Float] :per_page 
-    # @option opts [Float] :page 
+    # @option opts [Integer] :per_page 
+    # @option opts [Integer] :page 
     # @return [Array<Profile>]
     def list_profiles(opts = {})
       data, _status_code, _headers = list_profiles_with_http_info(opts)
@@ -562,8 +562,8 @@ module ForestVPNCloudAPI
     # Profile list
     # @param [Hash] opts the optional parameters
     # @option opts [String] :external_key 
-    # @option opts [Float] :per_page 
-    # @option opts [Float] :page 
+    # @option opts [Integer] :per_page 
+    # @option opts [Integer] :page 
     # @return [Array<(Array<Profile>, Integer, Hash)>] Array<Profile> data, response status code and response headers
     def list_profiles_with_http_info(opts = {})
       if @api_client.config.debugging

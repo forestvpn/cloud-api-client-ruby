@@ -561,8 +561,8 @@ opts = {
   aggregate_by: 'hourly', # String | 
   date_after: Date.parse('2013-10-20'), # Date | 
   date_before: Date.parse('2013-10-20'), # Date | 
-  per_page: 8.14, # Float | 
-  page: 8.14 # Float | 
+  per_page: 56, # Integer | 
+  page: 56 # Integer | 
 }
 
 begin
@@ -600,8 +600,8 @@ end
 | **aggregate_by** | **String** |  | [optional] |
 | **date_after** | **Date** |  | [optional] |
 | **date_before** | **Date** |  | [optional] |
-| **per_page** | **Float** |  | [optional] |
-| **page** | **Float** |  | [optional] |
+| **per_page** | **Integer** |  | [optional] |
+| **page** | **Integer** |  | [optional] |
 
 ### Return type
 
@@ -642,8 +642,8 @@ end
 api_instance = ForestVPNCloudAPI::ProfilesApi.new
 opts = {
   external_key: 'external_key_example', # String | 
-  per_page: 8.14, # Float | 
-  page: 8.14 # Float | 
+  per_page: 56, # Integer | 
+  page: 56 # Integer | 
 }
 
 begin
@@ -678,8 +678,8 @@ end
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
 | **external_key** | **String** |  | [optional] |
-| **per_page** | **Float** |  | [optional] |
-| **page** | **Float** |  | [optional] |
+| **per_page** | **Integer** |  | [optional] |
+| **page** | **Integer** |  | [optional] |
 
 ### Return type
 

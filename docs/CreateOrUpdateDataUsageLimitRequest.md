@@ -5,7 +5,7 @@
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
 | **duration** | **String** | Duration in ISO 8601 format. Example P7D - per week | [optional] |
-| **value** | **Float** | Limit of bytes | [optional] |
+| **value** | **Integer** | Limit of bytes | [optional] |
 
 ## Example
 

@@ -67,7 +67,7 @@ module ForestVPNCloudAPI
       {
         :'id' => :'String',
         :'duration' => :'String',
-        :'value' => :'Float',
+        :'value' => :'Integer',
         :'scope' => :'String'
       }
     end
