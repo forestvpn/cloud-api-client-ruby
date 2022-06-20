@@ -11,5 +11,5 @@ OpenAPI Generator version: 6.0.0
 =end
 
 module ForestVPNCloudAPI
-  VERSION = 'ERSION'
+  VERSION = '1.0.0'
 end

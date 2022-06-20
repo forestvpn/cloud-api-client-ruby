@@ -11,4 +11,4 @@ script:
   - bundle install --path vendor/bundle
   - bundle exec rspec
   - gem build forestvpn_cloud_api.gemspec
-  - gem install ./forestvpn_cloud_api-ERSION.gem
+  - gem install ./forestvpn_cloud_api-1.0.0.gem
