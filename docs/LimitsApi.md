@@ -7,7 +7,7 @@ All URIs are relative to *https://api.forestvpn.com/cloud/v1*
 | [**create_data_usage_limit**](LimitsApi.md#create_data_usage_limit) | **POST** /limits/data-usage/ | Create data usage limit |
 | [**delete_data_usage_limit**](LimitsApi.md#delete_data_usage_limit) | **DELETE** /limits/data-usage/{limitId}/ | Delete data usage limit |
 | [**get_data_usage_limit**](LimitsApi.md#get_data_usage_limit) | **GET** /limits/data-usage/{limitId}/ | Data usage limit details |
-| [**lis_data_usage_limits**](LimitsApi.md#lis_data_usage_limits) | **GET** /limits/data-usage/ | Data usage limit list |
+| [**list_data_usage_limits**](LimitsApi.md#list_data_usage_limits) | **GET** /limits/data-usage/ | Data usage limit list |
 | [**partial_update_data_usage_limit**](LimitsApi.md#partial_update_data_usage_limit) | **PATCH** /limits/data-usage/{limitId}/ | Partial update profile details |
 | [**update_data_usage_limit**](LimitsApi.md#update_data_usage_limit) | **PUT** /limits/data-usage/{limitId}/ | Update data usage limit |
 
@@ -229,9 +229,9 @@ end
 - **Accept**: application/json
 
 
-## lis_data_usage_limits
+## list_data_usage_limits
 
-> <Array<DataUsageLimit>> lis_data_usage_limits
+> <Array<DataUsageLimit>> list_data_usage_limits
 
 Data usage limit list
 
@@ -255,28 +255,28 @@ api_instance = ForestVPNCloudAPI::LimitsApi.new
 
 begin
   # Data usage limit list
-  result = api_instance.lis_data_usage_limits
+  result = api_instance.list_data_usage_limits
   p result
 rescue ForestVPNCloudAPI::ApiError => e
-  puts "Error when calling LimitsApi->lis_data_usage_limits: #{e}"
+  puts "Error when calling LimitsApi->list_data_usage_limits: #{e}"
 end
 ```
 
-#### Using the lis_data_usage_limits_with_http_info variant
+#### Using the list_data_usage_limits_with_http_info variant
 
 This returns an Array which contains the response data, status code and headers.
 
-> <Array(<Array<DataUsageLimit>>, Integer, Hash)> lis_data_usage_limits_with_http_info
+> <Array(<Array<DataUsageLimit>>, Integer, Hash)> list_data_usage_limits_with_http_info
 
 ```ruby
 begin
   # Data usage limit list
-  data, status_code, headers = api_instance.lis_data_usage_limits_with_http_info
+  data, status_code, headers = api_instance.list_data_usage_limits_with_http_info
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <Array<DataUsageLimit>>
 rescue ForestVPNCloudAPI::ApiError => e
-  puts "Error when calling LimitsApi->lis_data_usage_limits_with_http_info: #{e}"
+  puts "Error when calling LimitsApi->list_data_usage_limits_with_http_info: #{e}"
 end
 ```
 

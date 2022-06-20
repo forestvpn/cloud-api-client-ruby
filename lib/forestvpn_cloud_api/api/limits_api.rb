@@ -206,17 +206,17 @@ module ForestVPNCloudAPI
     # Data usage limit list
     # @param [Hash] opts the optional parameters
     # @return [Array<DataUsageLimit>]
-    def lis_data_usage_limits(opts = {})
-      data, _status_code, _headers = lis_data_usage_limits_with_http_info(opts)
+    def list_data_usage_limits(opts = {})
+      data, _status_code, _headers = list_data_usage_limits_with_http_info(opts)
       data
     end
 
     # Data usage limit list
     # @param [Hash] opts the optional parameters
     # @return [Array<(Array<DataUsageLimit>, Integer, Hash)>] Array<DataUsageLimit> data, response status code and response headers
-    def lis_data_usage_limits_with_http_info(opts = {})
+    def list_data_usage_limits_with_http_info(opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: LimitsApi.lis_data_usage_limits ...'
+        @api_client.config.logger.debug 'Calling API: LimitsApi.list_data_usage_limits ...'
       end
       # resource path
       local_var_path = '/limits/data-usage/'
@@ -242,7 +242,7 @@ module ForestVPNCloudAPI
       auth_names = opts[:debug_auth_names] || ['ApiTokenAuth', 'BearerTokenAuth']
 
       new_options = opts.merge(
-        :operation => :"LimitsApi.lis_data_usage_limits",
+        :operation => :"LimitsApi.list_data_usage_limits",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -253,7 +253,7 @@ module ForestVPNCloudAPI
 
       data, status_code, headers = @api_client.call_api(:GET, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: LimitsApi#lis_data_usage_limits\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: LimitsApi#list_data_usage_limits\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
