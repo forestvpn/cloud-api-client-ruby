@@ -45,9 +45,9 @@ module ForestVPNCloudAPI
     def self.openapi_types
       {
         :'id' => :'String',
-        :'connections' => :'Float',
-        :'received_bytes' => :'Float',
-        :'transmitted_bytes' => :'Float',
+        :'connections' => :'Integer',
+        :'received_bytes' => :'Integer',
+        :'transmitted_bytes' => :'Integer',
         :'date' => :'Time'
       }
     end
